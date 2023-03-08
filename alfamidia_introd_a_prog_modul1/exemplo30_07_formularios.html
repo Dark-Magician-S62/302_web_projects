@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Monte seu carro</title>
+</head>
+<body>
+<form method="get">
+<fieldset>
+	<p><legend>Escolha a Versão </legend></p>
+	<p><label><input type=radio name="Sports" required value="Sports">Sports</label></p>
+	<p><label><input type="radio" name="Basic" required value="Basic">Basic</label></p>
+</fieldset>
+<fieldset>
+	<p><legend>Selecione os Opcionais</legend>
+		<p><label><input type="checkbox" name="Aquecedor de Bancos">Aquecedor de Bancos</label></p>
+		<p><label><input type="checkbox" name="air_conditioning"></label>Ar 
+		Condicionado</p>
+		<p><label><input type="checkbox" name="leatherseats"></label>Bancos em Couro</p>
+		<p><label><input type="checkbox" name="starter_button">Botão Start-Stop</label></p>
+		<p><label><input type="checkbox" name="auto_tranny">Câmbio Automático</label></p>
+		<p><label><input type="checkbox" name="elec_steering"></label>Direção Elétrica</p>
+		<p><label><input type="checkbox" name="spotify_integration">Multimídia com integração ao Spotify</label></p>
+		<p><label><input type="checkbox" name="sport_springs">Molas Esportivas</label></p>
+</fieldset>
+<legend>Entrega do Carro</legend>
+<p><label><input type=time min="00:00" max="23:59" name="Hora"></label></p>
+<p><label><input type="date" name="Data"></label></p>
+<p><input type="submit" name="finish" value="Finalizar"></p>
+</form>
+</body>
+</html>
