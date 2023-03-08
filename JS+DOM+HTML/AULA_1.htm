@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<!--><rel stylesheet type=text/css href=style.css><!-->
+<title>1.JS+DOM - 18/07/2022</title>
+	<script>
+			function principal(){
+		let msg = prompt("digite sua mensagem");
+		let elemento = document.getElementById("mensagem");
+		elemento.innerHTML = msg;
+		}
+	</script>
+</head>
+<body>
+	<p id=linha1 onmouseover="principal()">Get over there!</p>
+	<p onclick="principal()">Click Here</p>
+	<p id=mensagem></p>
+</body>
+</html>

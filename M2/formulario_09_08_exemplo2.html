@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exemplo 02 - 09/08/21</title>
+</head>
+<body>
+	<form name="converter" method="post">
+		<div id="mph2kmh">
+			Velocidade (mph)
+			<input id="n1" type="number" name="n1" value=""><br><br>
+		</div>
+		<div id="kmh2mph">
+			Velocidade (km/h)
+			<input id="n2" type="number" name="n2" value="">		
+		</div>
+		<br><br>
+		<button id="convert2mph" onclick="Calculate()" name="kmhtomph">Converter para milhas</button><br><br>
+		<button id="convert2kmh" onclick="Calculate()" name="mphtokmh">Converter para quilômetros</button><br><br>
+		<div id="resultado">
+			Velocidade convertida
+			<input type="number" name="result">
+		</div>
+	</form>
+	<script type="text/javascript">
+		function Calculate() 
+        {
+		var n1 =  document.getElementById("mph2kmh"); //document.f1.n1.value;
+		var n2 =  document.getElementById("kmh2mph"); //document.f1.n2.value;
+		var result = document.getElementById("resultado");
+
+		n1 = n1 * 1;
+		n2 = n2 * 1;
+
+		if (mphtokmh.clicked == true) {
+			Calculate(n1 * 1.609)=result;
+
+		}
+		else if (kmhtomph.clicked == true) {
+			Calculate(n2 / 1.609)=result;
+
+		}
+
+Calculate();
+		document.f1.result.value = result;
+}
+
+	</script>
+</body>
+</html>

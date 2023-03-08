@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<!--><rel stylesheet type=text/css href=style.css><!-->
+<title>3.JS+DOM - 18/07/2022</title>
+<script>
+	function IMCCalc() {
+	var height = document.getElementById("height").value;
+	var weight = document.getElementById("weight").value;
+	var oper = document.getElementById("operacao").value;
+	var result = document.getElementById("resultado");
+	var imc = weight / (height ** 2);
+	
+	var classificacao = "";
+	
+	if(imc < 18.5){
+	classificacao = "Abaixo do Peso";
+	}
+
+	else if(imc <= 25){
+		classificacao = "Peso Normal";}
+	else if(imc <= 30){
+		classificacao = "Sobrepeso";}
+	else if(imc <= 35){
+		classificacao = "Obesidade Grau I";}
+	else if(imc <= 40){
+		classificacao = "Obesidade Grau II";}
+	else{
+		classificacao = "Obesidade Grau III";
+	}
+	if(oper == "1"){
+	result.innerHTML = "IMC: " + imc;
+	}
+	else if(oper == "2"){
+	result.innerHTML = "Classificação: " + classificacao;
+	}
+	else{
+	result.innerHTML = "IMC: " + imc + "<BR>Classificação: " + classificacao;
+	}
+}
+</script>
+</head>
+<body>
+<form method="post">
+	Cálculo de IMC
+	<br>	Insira a Altura
+	<input name="height" id="height">
+	<br>	Insira o Peso
+	<input name="weight" id="weight">	
+	<br>
+	<select name="operacao" id="operacao">
+		<option value="1">Valor</option>
+		<option value="2">Resultado</option>
+		<option value="3">Exibir Valor e Resultado</option>
+	</select>
+	<!--<input type="button" value="Enviar" onclick="IMCCalc()">!-->
+	<p><img src="submit_button.png" width="100px" height="40px" value="Enviar" onclick="IMCCalc()">
+	<br>
+	<p>Resultado:
+	<p id="resultado"></p>
+	</form>
+</body>
+</html>
