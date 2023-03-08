@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="layout.css"
+	<title>Javascript 09/08</title>
+</head>
+<body>
+	<h1>Teste de Repetição - 09/08</h1>
+<script> //repetição por contagem de 
+								//valores, depende de
+		  						//incremento ou decremento.
+	var res = "";
+	for (var n=1; n<=60; n=n+2) {
+		res = res + n + " - ";
+	}
+alert("Resultado: " + res);
+//repetição condicional, a condição
+//final não necessariamente é uma contagem de valores.
+var resposta = prompt("Digite SIM para continuar");
+var res = "";
+while(resposta == "SIM"); 
+{
+	res = res + " - \n";
+
+}
+alert(res);
+while(resposta == "sim"); 
+{
+	res = res + " - outra repetição \n";
+
+}
+alert(res);
+
+var res = "";
+do {
+	res = res + " - mais um teste de repetição \n"
+	resposta = prompt("Digite sim para continuar");
+}	while (resposta == "sim");
+alert(res);
+</script>
+</body>
+</html>
