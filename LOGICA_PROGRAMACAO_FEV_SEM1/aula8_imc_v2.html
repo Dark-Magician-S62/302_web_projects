@@ -1,0 +1,35 @@
+<script>
+
+let peso = parseFloat(prompt("Insira seu peso"));
+let altura = parseFloat(prompt("Insira sua altura"));
+let imc = peso / altura **2;
+
+if (imc < 18.5){
+	alert("abaixo do peso");
+}
+
+else 
+	if (imc >=18.5){
+		if (imc <= 24.9){
+	alert("normal");}
+}
+else 
+	if (imc >=25){
+		if (imc <=29.9){
+	alert("sobrepeso");}
+}
+else 
+	if (imc >=30){
+		if (imc <= 34.9){
+	alert("obesidade leve");}
+}
+else 
+	if (imc >=35){
+		if(imc <= 39.9){
+	alert("obesidade moderada");}
+}
+else 
+	if (imc >=40){
+	alert("obesidade grave");
+}
+</script>
