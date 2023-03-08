@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+root{
+    --primary-color: aqua;
+    --secondary-color: purple;
+    --tertiary-color: darkgray;
+}
+
+body
+{
+    background-color: purple;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+}
+#container
+{
+    background-color: #C5C6D0;
+    border: 16px  #606060;
+    color: black;
+    height: 570px;
+    width: 370px;
+    margin: 180px auto;
+    box-shadow: 3px 3px 16px #1F1F1F;
+    border-radius: 20px;
+}
+.title2
+{
+    margin-top: 20px;
+    background-color: aquamarine;
+    text-transform: uppercase;
+    color: blueviolet;
+    text-align: center;
+}
+.formInput
+{
+    background-color: #9897A9;
+    margin-left: 20px;
+    padding-top: 0px;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 4px;
+}
+.formInput:focus {
+    border: 3px solid lightgray;
+}
+.formInput:hover{
+    background-color: lightgray;
+}
+.submitButton
+{
+    margin-top: 35px;
+    margin-left: 115px;
+    display: block;
+    text-transform: uppercase;
+    border: solid 2px black;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px #2F2F2F;
+    font-size: large;
+    background-color: teal;
+    
+    color: white
+}
+
+#totalTip{
+    font-size: 20px;
+    margin-top: 4px;
+    text-align: center;
+}
+#final{
+	align: bottom;
+	margin-bottom: 10px
+}
