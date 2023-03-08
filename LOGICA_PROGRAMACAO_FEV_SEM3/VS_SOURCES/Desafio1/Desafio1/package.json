@@ -1,0 +1,9 @@
+{
+  "name": "desafio1",
+  "version": "0.0.0",
+  "description": "Desafio1",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "grand-prixitioning-system",
+  "version": "0.0.0",
+  "description": "GrandPrixitioningSystem",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  }
+}
