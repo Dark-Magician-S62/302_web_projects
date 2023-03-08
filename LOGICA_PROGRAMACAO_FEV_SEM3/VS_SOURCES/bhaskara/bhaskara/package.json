@@ -1,0 +1,9 @@
+{
+  "name": "bhaskara",
+  "version": "0.0.0",
+  "description": "bhaskara",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  }
+}

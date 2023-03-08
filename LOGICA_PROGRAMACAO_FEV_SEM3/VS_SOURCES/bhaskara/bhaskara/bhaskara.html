@@ -1,0 +1,16 @@
+<script>
+let a = parseInt(prompt("insira o valor de a"));
+let b = parseInt(prompt("insira o valor de b"));
+let c = parseInt(prompt("insira o valor de c"));
+let operador = prompt("insira o operador ou 'exit' para sair.");
+let resultado;
+while (operador != "exit") {
+    if (operador == "+") {
+        resultado = -(b) + (Math.sqrt(b ** 2  - 4 * (a) * (c) ))/ 2 * (a);
+    }
+    else if (operador == "-") {
+        resultado = -(b) - (Math.sqrt(b ** 2)) - 4 * (a) * (c) / 2 * (a);
+    }
+    alert("O resultado é" + resultado);
+}
+</script>

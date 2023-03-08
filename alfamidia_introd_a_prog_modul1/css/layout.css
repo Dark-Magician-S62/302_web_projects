@@ -1,0 +1,21 @@
+#titulo1
+{
+	font-size:48px;
+	color:#FFA100;
+	font-family:arial;
+	border: 5px SOLID black;
+	padding: 6px;
+	margin: 3px;
+}
+
+#titulo2
+{
+	font-size:48px;
+	background-color: #999999;
+	color:#FF99FF;
+	font-family:arial;
+	border: 5px SOLID red;
+	padding: 6px;
+	margin: 3px;
+	text-align: justify;
+}
