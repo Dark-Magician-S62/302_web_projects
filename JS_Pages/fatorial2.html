@@ -1,0 +1,22 @@
+<script>
+
+function fatorial(fator)
+{
+	if (fator <=2)
+		return fator;
+	return fator * fatorial(fator-1);
+}
+
+var entrada = prompt("entre com os números para calcular o fatorial");
+
+/*var fatorial = entrada;
+
+while(entrada > 2)
+{
+	entrada--;
+	fatorial = fatorial * entrada;
+}
+
+alert("fatorial é " + fatorial);
+
+</script>
